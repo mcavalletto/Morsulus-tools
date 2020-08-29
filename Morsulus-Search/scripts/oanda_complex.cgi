@@ -150,6 +150,7 @@ for $i (1 .. $criteria) {
   print '<input type="text" name="p', $i, '" value="', $p[$i], '" size=60>';
 }
 print '</ol>';
+
 if ($valid && @validation_errors)
 {
     print '<p>Description validation errors:';
