@@ -581,10 +581,10 @@ XXSiteHeadXX
     <h3>Look Up Search Codes</h3>
     
     <ul>    
-        <li><a href="XXRecordCodesPageUrlXX">Record Type Codes</a>
-        <li><a href="XXKingdomCodesPageUrlXX">Kingdom Codes</a>
         <li><a href="XXCategoryCodesPageUrlXX">Category Heading Codes</a>
         <li><a href="XXFeatureCodesPageUrlXX">Feature Codes</a>
+        <li><a href="XXRecordCodesPageUrlXX">Record Type Codes</a>
+        <li><a href="XXKingdomCodesPageUrlXX">Kingdom Codes</a>
     </ul>
 
     <h3>Database Details and Download</h3>
@@ -1508,6 +1508,10 @@ XXSiteHeadXX
         <tr>
             <td> AN </td>
             <td> Alternate Name </td>
+        </tr>
+        <tr>
+            <td> ABN </td>
+            <td> Ancient Branch Name </td>
         </tr>
         <tr>
             <td> ANC </td>
@@ -19634,7 +19638,7 @@ $conf_file = '.configweb';
 
 $config{'XXPrimerUrlXX'} = 'http://heraldry.sca.org/armory/newprimer/';
 $config{'XXLoARUrlXX'} = 'http://heraldry.sca.org/loar';
-$config_version = '2024-07-07 (1:development:222+)';
+$config_version = '2024-07-07 (1:development:224+)';
 $config{'XXVersionXX'} = $config_version;
 $config{'XXHeadXX'} ||= '';
 $config{'XXSiteHeadXX'} ||= '';
