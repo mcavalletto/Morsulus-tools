@@ -18743,7 +18743,7 @@ while (1) {
       print NS q^'^;
       #&log ("> '");
     }
-    if (@tops > 50 || $show_copyright) {
+    if (@tops > 500 || $show_copyright) {
       foreach (@copyright) {
         print NS q^'^, $_;
         #&log ("> '$_");
@@ -19643,7 +19643,7 @@ $conf_file = '.configweb';
 
 $config{'XXPrimerUrlXX'} = 'http://heraldry.sca.org/armory/newprimer/';
 $config{'XXLoARUrlXX'} = 'http://heraldry.sca.org/loar';
-$config_version = '2024-07-07 (1:development:226+)';
+$config_version = '2024-07-07 (1:development:227+)';
 $config{'XXVersionXX'} = $config_version;
 $config{'XXHeadXX'} ||= '';
 $config{'XXSiteHeadXX'} ||= '';
