@@ -160,7 +160,7 @@ for $i (1 .. $criteria) {
 
   print '<input type="text" name="p', $i, '" value="', $p[$i], '" size="60" placeholder="Search pattern">';
 
-  print '<input type="text" name="w', $i, '" value="', ( $weight[$i] == 1 ? '' : $weight[$i] ), '" size="6" placeholder="Weight">';
+  print '<input type="text" name="w', $i, '" value="', ( $weight[$i] == 1 ? '' : $weight[$i] ), '" size="4" placeholder="Weight">';
   print '</div>';
 }
 print '</div>';
