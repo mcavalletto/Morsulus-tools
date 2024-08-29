@@ -1699,8 +1699,8 @@ XXSiteHeadXX
     table.lookup th { text-align: left; }
     table.lookup th,
     table.lookup td { padding: 2px 5px; }
-    table.lookup th:nth-child(2),
-    table.lookup td:nth-child(2) { min-width: 25%; }
+    table.lookup tr th:nth-child(1),
+    table.lookup tr td:nth-child(1) { min-width: 25%; }
     table.lookup tr:hover td { background: #ffc;}
     span.category-synonyms { color: #666; }
 </style>
@@ -16485,7 +16485,7 @@ for $i (1 .. $criteria) {
 
   print '<input type="text" name="p', $i, '" value="', $p[$i], '" size="60" placeholder="Search pattern">';
 
-  print '<input type="text" name="w', $i, '" value="', ( $weight[$i] == 1 ? '' : $weight[$i] ), '" size="6" placeholder="Weight">';
+  print '<input type="text" name="w', $i, '" value="', ( $weight[$i] == 1 ? '' : $weight[$i] ), '" size="4" placeholder="Weight">';
   print '</div>';
 }
 print '</div>';
@@ -17936,7 +17936,7 @@ sub print_match {
     print_and_clear( $for );
     print_and_clear( $jointly );
     print &source ($source[0]);
-    print ', then ', $disp, &source ($source[1]) if ($source =~ /-/);
+    print ', then ', $disp, ' ', &source ($source[1]) if ($source =~ /-/);
     print '.';
     print '</span>';
     $result_stats{'armory-' . $type_name{$type} . '-' . ($source =~ /-/ ? 'obsolete' : 'current') } ++;
@@ -19641,7 +19641,7 @@ $conf_file = '.configweb';
 
 $config{'XXPrimerUrlXX'} = 'http://heraldry.sca.org/armory/newprimer/';
 $config{'XXLoARUrlXX'} = 'http://heraldry.sca.org/loar';
-$config_version = '2024-07-07 (1:development:228+)';
+$config_version = '2024-08-28 (1:development:232+)';
 $config{'XXVersionXX'} = $config_version;
 $config{'XXHeadXX'} ||= '';
 $config{'XXSiteHeadXX'} ||= '';
